@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Публічні Новини | Демонстраційний прототип</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="site" aria-label="Презентація демонстраційного прототипу мобільного застосунку">
+      <section class="hero section" data-section>
+        <div class="section-inner hero-inner">
+          <div class="copy hero-copy reveal">
+            <p class="eyebrow">Публічні Новини</p>
+            <h1>Демонстраційний прототип мобільного застосунку</h1>
+          </div>
+
+          <figure class="triple-mockup hero-mockup reveal delay-1" aria-label="Демонстрація сплеш-екрана у центральному мокапі">
+            <video class="mockup-video" src="assets/splash-demo.mp4" muted loop playsinline preload="metadata"></video>
+            <img src="assets/mockup-without-bg.png" alt="Мокапи екранів застосунку Публічні Новини" />
+          </figure>
+        </div>
+      </section>
+
+      <div class="content-gradient">
+        <section class="section" data-section>
+          <div class="section-inner prototype-layout">
+            <div class="copy reveal">
+              <h2>Що входить у прототип</h2>
+              <p>
+                Прототип демонструє основний користувацький шлях: відкриття головної стрічки, перегляд матеріалів, пошук, вибір регіону, перехід до ефіру, роботу з радіо та налаштування інтерфейсу.
+              </p>
+              <p>
+                Навігація побудована навколо нижнього меню. Основні розділи доступні без додаткових проміжних екранів: сьогодні, пошук, наживо, радіо та налаштування.
+              </p>
+            </div>
+
+            <figure class="video-mockup reveal delay-1" aria-label="Демонстрація основного користувацького шляху">
+              <video src="assets/main-transparent.webm" muted loop playsinline preload="metadata"></video>
+            </figure>
+
+            <figure class="wide-showcase reveal delay-2">
+              <div class="showcase-copy">
+                <h3>Робоча основа для запуску продукту</h3>
+                <p>
+                  Це не серія промальованих станів для презентації. Інтерфейс зібраний у реальному коді: з навігацією, медіа-сценаріями, даними, локальним збереженням і платформними інтеграціями.
+                </p>
+                <div class="proof-points" aria-label="Ключові підтвердження готовності прототипу">
+                  <span>Реальний код</span>
+                  <span>Працюючі сценарії</span>
+                  <span>Готовий до розвитку</span>
+                </div>
+              </div>
+              <img class="wide-mockup" src="assets/search-regions-mockups.png" alt="Пошук, регіони та матеріали у застосунку" />
+            </figure>
+          </div>
+        </section>
+
+        <section class="section" data-section>
+          <div class="section-inner split reverse">
+            <figure class="video-mockup reveal" aria-label="Демонстрація перемикання модулів">
+              <video src="assets/overview-transparent.webm" muted loop playsinline preload="metadata"></video>
+            </figure>
+            <div class="copy reveal delay-1">
+              <h2>Головне — одразу</h2>
+              <p>
+                Тематичні добірки та актуальні матеріали. Головний екран відкривається зі стрічки “Сьогодні” та швидких категорій. Користувач бачить заголовок, медіа, короткий опис і може перейти до повного матеріалу.
+              </p>
+              <p>
+                Окремо продемонстровано перемикання модулів додатку: Новини, Спорт, Культура та Медіатека.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" data-section>
+          <div class="section-inner split reverse">
+            <figure class="video-mockup reveal" aria-label="Демонстрація ефіру та Picture-in-Picture">
+              <video src="assets/live-transparent.webm" muted loop playsinline preload="metadata"></video>
+            </figure>
+            <div class="copy reveal delay-1">
+              <h2>Ефір завжди поруч</h2>
+              <p>
+                Прямі трансляції, телепрограма, повний екран і Picture-in-Picture. Розділ “Наживо” містить перелік доступних трансляцій, а екран каналу — вкладки “ТБ програма” та “Наживо” з поточним розкладом.
+              </p>
+              <p>
+                Відео можна дивитися у звичайному режимі, розгорнути на весь екран або залишити поверх інших екранів у компактному вікні.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" data-section>
+          <div class="section-inner split">
+            <div class="copy reveal">
+              <h2>Радіо — в один дотик</h2>
+              <p>
+                Станції, обране, поточна програма та швидке керування. Розділ “Радіо” показує перелік станцій, дозволяє додавати станції в обране, відтворювати ефір одним натисканням і бачити поточний програмний блок.
+              </p>
+              <p>
+                Також передбачено швидке керування у шторці повідомлень.
+              </p>
+            </div>
+            <figure class="video-mockup reveal delay-1" aria-label="Демонстрація радіо">
+              <video src="assets/radio-transparent.webm" muted loop playsinline preload="metadata"></video>
+            </figure>
+          </div>
+        </section>
+
+        <section class="section" data-section>
+          <div class="section-inner split">
+            <div class="copy reveal">
+              <h2>Інтерфейс підлаштовується</h2>
+              <p>
+                Тема, формат карток, мова та розмір тексту. У налаштуваннях винесено параметри вигляду застосунку, керування кешем, очищення даних, посилання на правила використання, політику конфіденційності та інформаційні канали.
+              </p>
+              <p>
+                Окремо буде передбачено доступність для людей з вадами зору: додаток буде адаптований для роботи з VoiceOver і TalkBack, зі збільшеним текстом, чіткою структурою елементів і передбачуваною навігацією.
+              </p>
+            </div>
+            <figure class="video-mockup reveal delay-1" aria-label="Демонстрація налаштувань вигляду">
+              <video src="assets/settings-transparent.webm" muted loop playsinline preload="metadata"></video>
+            </figure>
+          </div>
+        </section>
+
+        <section class="section tech-section" data-section>
+          <div class="section-inner tech-flow">
+            <div class="copy reveal">
+              <h2>Розроблено на Kotlin Multiplatform</h2>
+              <p>
+                Прототип побудовано на Kotlin Multiplatform, щоб спільно використовувати бізнес-логіку, моделі даних і частину мережевого шару на Android та iOS. Такий підхід зменшує дублювання коду, спрощує підтримку й створює основу для подальшого розвитку продукту на кількох платформах.
+              </p>
+            </div>
+
+            <img class="ecosystem-image reveal delay-1" src="assets/ecosystem-devices.png" alt="Медіадодаток на телефоні та планшеті" />
+
+            <div class="stack reveal delay-2" aria-label="Технічний стек">
+              <h3>Технічний стек</h3>
+              <p><strong>UI:</strong> Compose Multiplatform / Material 3.</p>
+              <p><strong>Android:</strong> AGP 9.2.1, compile/target SDK 36, min SDK 26, JVM 11.</p>
+              <p><strong>Networking:</strong> Ktor 3.5.0, OkHttp на Android, Darwin client на iOS.</p>
+              <p><strong>Images:</strong> Coil 3.4.0.</p>
+              <p><strong>Storage:</strong> SQLDelight 2.3.2 з Android/native драйверами.</p>
+              <p><strong>Serialization:</strong> kotlinx.serialization JSON.</p>
+              <p><strong>Media:</strong> AndroidX Media3 ExoPlayer для Android.</p>
+              <p><strong>Extras:</strong> Lifecycle ViewModel/Runtime Compose, Haze, Google Play in-app update.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
