@@ -416,9 +416,28 @@ video {
     grid-template-areas: none;
   }
 
+  .prototype-layout {
+    justify-items: stretch;
+    gap: clamp(28px, 7svh, 56px);
+  }
+
   .prototype-layout .copy,
   .wide-showcase {
     grid-area: auto;
+  }
+
+  .prototype-layout .video-mockup {
+    order: 1;
+    width: min(78vw, 380px);
+    max-width: none;
+  }
+
+  .prototype-layout > .copy {
+    order: 2;
+  }
+
+  .prototype-layout > .wide-showcase {
+    order: 3;
   }
 
   .wide-showcase {
@@ -426,6 +445,14 @@ video {
     justify-items: center;
     text-align: center;
     margin-top: clamp(72px, 10svh, 108px);
+  }
+
+  .wide-showcase .wide-mockup {
+    order: 1;
+  }
+
+  .wide-showcase .showcase-copy {
+    order: 2;
   }
 
   .showcase-copy {
@@ -445,6 +472,10 @@ video {
   .prototype-layout .video-mockup video {
     max-height: 58svh;
   }
+
+  .prototype-layout .video-mockup video {
+    width: 100%;
+  }
 }
 
 @media (max-width: 640px) {
@@ -453,7 +484,12 @@ video {
   }
 
   .hero-inner {
-    justify-items: start;
+    min-height: 100svh;
+    align-content: center;
+    justify-items: center;
+    gap: clamp(18px, 3.8svh, 30px);
+    padding-top: clamp(28px, 5svh, 44px);
+    padding-bottom: clamp(28px, 5svh, 44px);
   }
 
   .copy h1,
@@ -463,14 +499,45 @@ video {
     line-height: 1.08;
   }
 
+  .hero .copy h1 {
+    font-size: clamp(30px, 8.1vw, 39px);
+  }
+
+  .eyebrow {
+    margin-bottom: 12px !important;
+    font-size: clamp(15px, 4vw, 18px) !important;
+  }
+
   .copy p {
     font-size: 19px;
     line-height: 1.32;
   }
 
   .triple-mockup {
-    width: min(124vw, 680px);
-    transform: translateX(-8vw);
+    width: min(94vw, 58svh, 520px);
+    transform: none;
+    justify-self: center;
+  }
+
+  .prototype-layout {
+    gap: clamp(24px, 6svh, 44px);
+  }
+
+  .prototype-layout .video-mockup {
+    width: min(80vw, 340px);
+  }
+
+  .prototype-layout .video-mockup video {
+    max-height: 48svh;
+  }
+
+  .wide-showcase {
+    gap: clamp(24px, 6svh, 42px);
+    margin-top: clamp(54px, 8svh, 86px);
+  }
+
+  .wide-mockup {
+    width: min(96vw, 520px);
   }
 
   .video-mockup {
